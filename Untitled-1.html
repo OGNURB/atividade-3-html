@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulario</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label>Nome: <input type="text" name="nome" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Data de Nascimento: <input type="date" name="data_nasc" required></label><br>
+            <label>Senha: <input type="password" name="senha" required></label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>tipo 2</legend>
+            <p>AA:</p>
+            <label><input type="checkbox" name="musica" value="rock">a</label>
+            <label><input type="checkbox" name="musica" value="pop">b</label>
+            <label><input type="checkbox" name="musica" value="mpb">c</label>
+            <label><input type="checkbox" name="musica" value="classica">v</label><br>
+
+            <p>pergunta?</p>
+            <label><input type="radio" name="esporte" value="sim" required>Sim</label>
+            <label><input type="radio" name="esporte" value="nao">Não</label><br><br>
+
+            <label>Esporte favorito:<br>
+                <select name="esporte_fav">
+                    <option value="futebol">Futebol</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="natacao">Natação</option>
+                    <option value="volei">Vôlei</option>
+                </select>
+            </label><br><br>
+
+            <label>Cor favorita:<br>
+                <input type="color" name="cor_fav">
+            </label><br>
+
+            <label>valor:<br>
+                <input type="range" name="nota_site" min="0" max="10">
+            </label><br>
+
+            <label>Quantas horas por dia você usa internet?<br>
+                <input type="number" name="horas_internet" min="0" max="24">
+            </label><br>
+
+            <label>Comentário:<br>
+                <textarea name="comentario" rows="4" cols="30"></textarea>
+            </label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    
